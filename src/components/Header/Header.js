@@ -1,3 +1,5 @@
+import './Header.css';
+
 const header_image = {
     imageUrl: 'https://cdn.pixabay.com/photo/2023/07/17/13/50/baby-snow-leopard-8132690_960_720.jpg',
     author: 'ChiemSeherin'
@@ -5,7 +7,7 @@ const header_image = {
 
 function Header() {
     return (
-        <div>
+        <div className='header'>
             <img
               src={header_image.imageUrl}
               alt={'Photo by ' + header_image.author}

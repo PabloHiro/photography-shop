@@ -1,0 +1,46 @@
+.navigation {
+    margin-left: 0.5em;
+    margin-right: 0.5em;
+    position: sticky;
+    top: 0;
+    overflow: hidden;
+    padding: 0.2em;
+}
+
+.navigation-left {
+    display: flex;
+    float: left;
+    column-gap: 0.2em;
+    justify-content: space-between;
+}
+
+.navigation-right {
+    display: flex;
+    float: right;
+    column-gap: 0.2em;
+    justify-content: space-between;
+}
+
+.navigation-button {
+    background-color: peru;
+    border-style: solid;
+    border-color: tan;
+    border-radius: 0.4em;
+    padding-left: 0.3em;
+    padding-right: 0.3em;
+}
+
+.navigation-button a:link {
+    color: sienna;
+    text-decoration: none;
+}
+
+.navigation-button a:visited {
+    color: sienna;
+    text-decoration: none;
+}
+
+.navigation-button a:hover {
+    color: orange;
+    text-decoration: none;
+}

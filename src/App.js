@@ -1,26 +1,24 @@
-import logo from './logo.svg';
 import './App.css';
-import Header from './components/Header';
-import Navigation from './components/Navigation';
-import Contact from './components/Contact';
+import Header from './components/Header/Header';
+import Navigation from './components/Navigation/Navigation';
+import Contact from './components/Contact/Contact';
+import Slide from './components/Slide/Slide';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        {/*< img src={logo} className="App-logo" alt="logo" />*/}
+    <div className='background-theme'>
+      <div className='panel-theme'>
         <Navigation/>
+      </div>
+      <div className='panel-theme'>
         <Header/>
+      </div>
+      <div className='panel-theme'>
+        <Slide/>
+      </div>
+      <div className='panel-theme'>
         <Contact/>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      </div>
     </div>
   );
 }
