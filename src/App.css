@@ -1,12 +1,21 @@
+a {
+  color: rgb(144, 162, 201);
+  text-decoration: none;
+}
+
+a:hover {
+  color: white;
+}
+
 .background-theme {
-  background-color: tan;
+  background-color: rgb(34, 31, 31);
   min-height: 100vh;
   display: flex;
   flex-direction: column;
-  font-size: calc(8px + 2vmin);
-  padding: 0.1em;
-  row-gap: 0.2em;
-  overflow: hidden;
+  font-size: calc(6px + 2vmin);
+  padding: 1rem;
+  row-gap: 1rem;
+  align-items: center;
   /* Hide scrollbar for IE, Edge and Firefox */
   -ms-overflow-style: none;  /* IE and Edge */
   scrollbar-width: none;  /* Firefox */
@@ -17,9 +26,43 @@
   display: none;
 }
 
-
 .panel-theme {
-  background-color: sienna;
-  border-color: peru;
-  border-style: solid;
+  background-color: transparent;
+  color: rgb(144, 162, 201);
+  border-color: white;
+}
+
+/*
+@media (min-width: 480px) and (max-width: 720px) {
+  h1 {
+    font-size: 1.75rem;
+  }
+  h2 {
+    font-size: 1.25rem;
+  }
+}
+
+@media (min-width: 720px) and (max-width: 1080px) {
+  h1 {
+    font-size: 2rem;
+  }
+  h2 {
+    font-size: 1.75rem;
+  }
+  .panel-theme {
+    width: 720px
+  }
+}
+*/
+
+@media (min-width: 1280px) {
+  h1 {
+    font-size: 2rem;
+  }
+  h2 {
+    font-size: 1.75rem;
+  }
+  .panel-theme {
+    width: 1280px;
+  }
 }

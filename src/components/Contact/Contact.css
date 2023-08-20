@@ -12,18 +12,3 @@
     padding-left: 0.3em;
     padding-right: 0.3em;
 }
-
-.contact-button a:link {
-    color: tan;
-    text-decoration: none;
-}
-
-.contact-button a:visited {
-    color: tan;
-    text-decoration: none;
-}
-
-.contact-button a:hover {
-    color: orange;
-    text-decoration: none;
-}
