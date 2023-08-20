@@ -9,9 +9,9 @@ import 'swiper/css/pagination';
 import 'swiper/css/zoom';
 import { Navigation } from 'swiper/modules';
 
-function PreviousWork( {src}) {
+function PreviousWork( { src } ) {
     return (
-        <img className="previous-work" src={src}></img>
+        <img className="previous-work" src={ src }></img>
     );
   };
 

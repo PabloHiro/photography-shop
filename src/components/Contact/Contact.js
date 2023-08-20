@@ -2,7 +2,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faTwitter, faInstagram, faFacebook } from '@fortawesome/free-brands-svg-icons';
 import './Contact.css';
 
-function ContactButton( {icon, href }) {
+function ContactButton( { icon, href } ) {
   return (
      <div className="contact-button">
         <a href={href} target="_blank" rel="noopener noreferrer">

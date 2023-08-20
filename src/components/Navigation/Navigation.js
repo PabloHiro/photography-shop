@@ -1,9 +1,9 @@
 import './Navigation.css';
 
-function NavigationButton( {name, href }) {
+function NavigationButton( { name, href } ) {
   return (
      <div className="navigation-button">
-        <a href={href}>{name}</a>
+        <a href={ href }>{ name }</a>
      </div>
   );
 };
