@@ -1,4 +1,5 @@
 import './Navigation.css';
+import Contact from '../Contact/Contact';
 
 function NavigationButton( { name, href } ) {
   return (
@@ -11,14 +12,14 @@ function NavigationButton( { name, href } ) {
 const Navigation = () => {
   return (
     <div className="navigation">
-      <div className="navigation-left">
-        <NavigationButton name="JManalang" href="#home"/>
+      <div className="top">
+      <NavigationButton name="Home" href="#home"/>
+      <NavigationButton name="Contact" href="#contact"/>
+      <NavigationButton name="Services" href="#services"/>
+      <NavigationButton name="About" href="#about"/>
       </div>
-      <div className="navigation-right">
-        <NavigationButton name="Home" href="#home"/>
-        <NavigationButton name="Contact" href="#contact"/>
-        <NavigationButton name="Services" href="#services"/>
-        <NavigationButton name="About" href="#about"/>
+      <div className="bottom">
+        <Contact/>
       </div>
     </div>
   );

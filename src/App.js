@@ -1,23 +1,22 @@
 import './App.css';
+import Logo from './components/Logo/Logo';
 import Header from './components/Header/Header';
 import Navigation from './components/Navigation/Navigation';
-import Contact from './components/Contact/Contact';
 import Slide from './components/Slide/Slide';
 import Service from './components/Service/Service';
 
 function App() {
   return (
     <div className='background-theme'>
-      <div className='panel-theme'>
+      <div className='logo-theme'>
+        <Logo/>
+      </div>
+      <div className='fixed-theme'>
         <Navigation/>
       </div>
       <div className='panel-theme'>
         <Header/>
-      </div>
-      <div className='panel-theme'>
-        <Slide/>
-      </div>
-      <div className='panel-theme'>
+        {/*<Slide/>*/}
         <h1>Services</h1>
         <Service title="Event coverage"
                  price="40e/h"
@@ -27,9 +26,10 @@ function App() {
                  price="25e"
                  description="Get your own portfolio"
         />
-      </div>
-      <div className='panel-theme'>
-        <Contact/>
+        <Service title="Photoshoot"
+                 price="35e"
+                 description="Get your own portfolio"
+        />
       </div>
     </div>
   );

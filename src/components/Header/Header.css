@@ -1,6 +1,5 @@
 .header {
     display: flex;
-    overflow: hidden;
     max-height: 10em;
 }
 

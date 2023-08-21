@@ -1,14 +1,9 @@
 .contact {
-    margin-left: 0.5em;
-    margin-right: 0.5em;
-    overflow: hidden;
+    display: flex;
 }
 
 .contact-button {
-    display: flex;
-    float: right;
-    column-gap: 0.2em;
-    justify-content: space-between;
+    float: bottom;
     padding-left: 0.3em;
     padding-right: 0.3em;
 }

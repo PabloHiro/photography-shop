@@ -1,0 +1,7 @@
+.logo {
+    display: flex;
+    float: right;
+    position: sticky;
+    top: 2vh;
+    margin-right: 1em;
+}
