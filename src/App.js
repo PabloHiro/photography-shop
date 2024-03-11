@@ -11,7 +11,8 @@ function importImages(r) {
 }
 
 //const food_images = importImages(require.context('./images/food/', false, /\.(png|jpe?g|svg)$/));
-const food_images = importImages(require.context('./images/food/', false));
+const food_images = importImages(require.context('./images/food/', false, /\.(PNG|JPE?G|SVG)$/));
+//const food_images = importImages(require.context('./images/food/', false));
 
 function App() {
   return (

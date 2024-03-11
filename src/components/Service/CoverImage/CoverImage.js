@@ -1,10 +1,10 @@
 import './CoverImage.css'; 
 
-function CoverImage(images) {
+function CoverImage( { images } ) {
     return (
         <div className='CoverImage'>
-            {images.map((img) =>
-                <div>{img}</div>
+            {images && images.map((img, index) =>
+                <div key={index}>{img.name}</div>
             )}
         </div>
     );
