@@ -17,17 +17,13 @@ function App() {
       <div className='panel-theme'>
         <Header/>
         {/*<Slide/>*/}
-        <h1>Services</h1>
         <Service title="Event coverage"
-                 price="40e/h"
                  description="Your event professional photographer. Focus on enjoying your time with your loved ones while we take care of putting these memories into pictures"
         />
         <Service title="Photoshoot"
-                 price="25e"
                  description="Get your own portfolio"
         />
         <Service title="Photoshoot"
-                 price="35e"
                  description="Get your own portfolio"
         />
       </div>

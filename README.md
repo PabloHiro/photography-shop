@@ -1,6 +1,12 @@
-# Getting Started with Create React App
+# Photography shop 
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+
+## Pre-requisites
+
+* Install [nvm](https://github.com/nvm-sh/nvm).
+* Select Node version 20 `nvm install 20` 
+* Install dependencies `npm i`
 
 ## Available Scripts
 

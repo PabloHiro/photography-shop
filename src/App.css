@@ -1,8 +1,18 @@
 :root {
-  --main-color: rgb(196, 152, 31);
-  --text-color: rgb(206, 196, 186);
-  --background-color: rgb(34, 31, 31);
-  --highlight-color: orange;
+  --main-color:           rgb(169, 153, 133);
+  --text-color:           rgb(23,26,33); 
+  --highlight-color:      rgb(163,59,32);
+  --background-color:     rgb(218, 210, 188);
+  --background-highlight: rgb(245, 241, 237);
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 * {
@@ -14,7 +24,7 @@
 }
 
 a {
-  color: var(--main-color);
+  color: var(--text-color);
   text-decoration: none;
 }
 

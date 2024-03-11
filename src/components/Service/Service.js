@@ -1,10 +1,9 @@
 import './Service.css';
 
-function Service( { title, price, description } ) {
+function Service( { title, description } ) {
     return (
         <div className='services'>
-            <div className='title'><h2>{ title }</h2></div>
-            <div className='price'><h2>{ price }</h2></div>
+            <div className='title'>{ title }</div>
             <div className='description'>{ description }</div>
         </div>
     );

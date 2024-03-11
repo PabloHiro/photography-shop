@@ -2,8 +2,7 @@
     display: flex;
 }
 
-.contact-button {
-    float: bottom;
-    padding-left: 0.3em;
-    padding-right: 0.3em;
+.contact-button:hover {
+    fa-inverse: var(--highlight-color);
 }
+

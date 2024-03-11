@@ -4,11 +4,9 @@ import './Contact.css';
 
 function ContactButton( { icon, href } ) {
   return (
-     <div className="contact-button">
-        <a href={href} target="_blank" rel="noopener noreferrer">
-        <FontAwesomeIcon icon={icon} className="icon" />
-        </a>
-     </div>
+      <a href={href} target="_blank" rel="noopener noreferrer">
+      <FontAwesomeIcon icon={icon} className="contact-button"/>
+      </a>
   );
 };
 
