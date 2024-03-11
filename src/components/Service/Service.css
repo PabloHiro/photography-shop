@@ -1,17 +1,12 @@
-.services {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr 2fr;
-    grid-auto-rows: 1fr;
+.service {
     padding: 0.2em;
-    row-gap: 0.3em;
     margin-top: 0.4em;
     margin-bottom: 0.4em;
     column-gap: 0.1em;
     background-color: var(--main-color);
 }
 
-.services:hover {
+.service:hover {
     background-color: var(--background-highlight);
 
 }
@@ -24,7 +19,4 @@
 
 .description {
     background-color: var(--main-color);
-    grid-row-start: 2;
-    grid-column-start: 1;
-    grid-column-end: 2;
 }

@@ -1,9 +1,9 @@
 :root {
-  --main-color:           rgb(169, 153, 133);
-  --text-color:           rgb(23,26,33); 
-  --highlight-color:      rgb(163,59,32);
-  --background-color:     rgb(218, 210, 188);
-  --background-highlight: rgb(245, 241, 237);
+  --main-color:           #B48B7D; 
+  --text-color:           #593D3B; 
+  --highlight-color:      #627264; 
+  --background-color:     #E3E7D3; 
+  --background-highlight: #E6E49F; 
 }
 
 body {
@@ -21,6 +21,15 @@ body {
   background-color: var(--background-color);
   color: var(--text-color);
   border-color: var(--main-color);
+  /* Hide scrollbar for IE, Edge and Firefox */
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+  font-size: calc(6px + 2vmin);
+}
+
+*::-webkit-scrollbar {
+  /* Hide scrollbar for Chrome, Safari and Opera */ 
+  display: none;
 }
 
 a {
@@ -32,23 +41,10 @@ a:hover {
   color: var(--highlight-color)
 }
 
-.background-theme {
-  display: grid;
-  font-size: calc(6px + 2vmin);
+.main {
+  margin-left: 16%;
+  margin-right: 16%;
 }
-
-.logo-theme {
-}
-
-.fixed-theme {
-  grid-column-start: 3;
-}
-
-.panel-theme {
-  grid-row-start: 1;
-  grid-column-start: 2;
-}
-
 /*
 @media (min-width: 480px) and (max-width: 720px) {
   h1 {
