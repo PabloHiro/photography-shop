@@ -1,0 +1,13 @@
+.cover-image-grid {
+    display: flex;
+    width: auto;
+}
+
+.cover-image-grid-column {
+}
+
+.masonry-img {
+    height: auto;
+    width: 100%;
+    filter: contrast(65%);
+}

@@ -3,21 +3,22 @@ import Slide from './components/Slide/Slide';
 import Service from './components/Service/Service';
 import Contact from './components/Contact/Contact';
 
-
-function importImages(r) {
+function importImages(r, path) {
   let images = [];
-  r.keys().map((item, index) => item.push);
-  return images
+  try {
+    r.keys().map((item, index) => images.push(item.replace(/^\.\//, path)));
+    return images;
+  } catch(error) {
+    console.error('Error importing images:', error);
+    return {};
+  }
 }
-
-//const food_images = importImages(require.context('./images/food/', false, /\.(png|jpe?g|svg)$/));
-const food_images = importImages(require.context('./images/food/', false, /\.(PNG|JPE?G|SVG)$/));
-//const food_images = importImages(require.context('./images/food/', false));
+const food_images = importImages(require.context('../public/assets/images/food/', false, /\.(png|jpe?g|svg)$/i), '/assets/images/food/');
 
 function App() {
   return (
     <div>
-      <div class="main">
+      <div className="main">
           <Service title="Event coverage"
                    description="Your event professional photographer. Focus on enjoying your time with your loved ones while we take care of putting these memories into pictures"
           />
@@ -29,10 +30,10 @@ function App() {
           />
           <Service title="Photoshoot"
                    description="Get your own portfolio"
-                   images={food_images}
+                   images_path_list={food_images}
           />
       </div>
-      <div class="corner">
+      <div className="corner">
           <Contact/>
       </div>
     </div>
