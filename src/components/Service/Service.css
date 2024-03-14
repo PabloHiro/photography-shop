@@ -1,21 +1,32 @@
 .service {
+    position: relative;
     padding: 0.2em;
     margin-top: 0.4em;
     margin-bottom: 0.4em;
     background-color: var(--main-color);
 }
 
-.service:hover {
-    background-color: var(--background-highlight);
-
+.title {
+    color: var(--background-color);
+    position: absolute;
+    text-align: center;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 2em;
+    background-color: transparent;
 }
 
-.title {
-    background-color: var(--main-color);
-    font-size: 2em;
+.title:hover {
+    color: var(--background-highlight);
 }
 
 
 .description {
-    background-color: var(--main-color);
+    position: absolute;
+    top: 50%;
+    left: 5%;
+    transform: translate(0%, -50%);
+    background-color: inherit;
+    text-align: left;
 }

@@ -1,13 +1,26 @@
+.cover-image-container {
+    display: block;
+}
+
+.cover-image-container.hidden {
+    opacity: 0%;
+}
+
 .cover-image-grid {
     display: flex;
     width: auto;
+    filter: contrast(65%);
+}
+
+.cover-image-grid:hover {
+    filter: contrast(85%);
 }
 
 .cover-image-grid-column {
 }
 
 .masonry-img {
+    display: flex;
     height: auto;
     width: 100%;
-    filter: contrast(65%);
 }
