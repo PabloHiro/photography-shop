@@ -10,7 +10,7 @@ function Service({ title, description, images_path_list }) {
 
     return (
         <div className='service'>
-            <div>
+            <div className='service-content'>
                 <CoverImage 
                     images_path_list={images_path_list} 
                     isVisible={isCoverImageVisible} 

@@ -1,9 +1,20 @@
 .service {
-    position: relative;
-    padding: 0.2em;
     margin-top: 0.4em;
     margin-bottom: 0.4em;
-    background-color: var(--main-color);
+    margin-left: calc(50% - var(--base-size)/2);
+    width: var(--base-size);
+    height: calc(var(--base-size) / var(--golden-ratio));
+    overflow: hidden;
+}
+
+.service-content {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    vertical-align: center;
 }
 
 .title {
@@ -15,12 +26,12 @@
     transform: translate(-50%, -50%);
     font-size: 2em;
     background-color: transparent;
+    text-shadow: 0.05em 0.05em var(--main-color);
 }
 
 .title:hover {
     color: var(--background-highlight);
 }
-
 
 .description {
     position: absolute;
@@ -30,3 +41,4 @@
     background-color: inherit;
     text-align: left;
 }
+

@@ -4,6 +4,9 @@
   --highlight-color:      #627264; 
   --background-color:     #E3E7D3; 
   --background-highlight: #E6E49F; 
+  --golden-ratio:         1.618;
+  --screen-width:         100vw; /* 100% of the viewport width */
+  --base-size:            calc(var(--screen-width) / var(--golden-ratio));
 }
 
 body {
@@ -42,41 +45,29 @@ a:hover {
 }
 
 .main {
-  margin-left: 16%;
-  margin-right: 16%;
+  align-items: center;
+  justify-content: center;
 }
-/*
+
+.corner {
+
+}
+
 @media (min-width: 480px) and (max-width: 720px) {
-  h1 {
-    font-size: 1.75rem;
+  :root{
+    --screen-width: 480px;
   }
-  h2 {
-    font-size: 1.25rem;
-  }
+
 }
 
 @media (min-width: 720px) and (max-width: 1080px) {
-  h1 {
-    font-size: 2rem;
-  }
-  h2 {
-    font-size: 1.75rem;
-  }
-  .panel-theme {
-    width: 720px
+  :root{
+    --screen-width: 720px;
   }
 }
-*/
 
-@media (min-width: 1280px) {
-  h1 {
-    font-size: 2rem;
-  }
-  h2 {
-    font-size: 1.75rem;
-  }
-  .background-theme {
-    grid-template-columns: 1fr 1000px 1fr;
-    min-height: 100vh;
+@media (min-width: 1080px) {
+  :root{
+    --screen-width: 1080px;
   }
 }

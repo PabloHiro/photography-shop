@@ -10,6 +10,13 @@ function CoverImage( { images_path_list, isVisible, onClick } ) {
         // Calculate the square root and round down to the nearest integer
         let roundedDown = Math.floor(Math.sqrt(length));
 
+        // Shuffle the elements of the array - https://stackoverflow.com/a/46545530/18099647
+        /*
+        let shuffled_array = array
+            .map(value => ({ value, sort: Math.random() }))
+            .sort((a, b) => a.sort - b.sort)
+            .map(({ value }) => value)
+        */
         // Return only the first n elements of the array
         return array.slice(0, roundedDown);
     };
@@ -27,7 +34,6 @@ function CoverImage( { images_path_list, isVisible, onClick } ) {
             ))}
             </Masonry>
         </div>
-
     );
 }
 

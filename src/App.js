@@ -22,21 +22,23 @@ function App() {
     <div>
       <div className="main">
           <Service title="Event coverage"
-                   description="Your event professional photographer. Focus on enjoying your time with your loved ones while we take care of putting these memories into pictures"
+                   description="Focus on enjoying your time with your loved ones while we take care of putting these memories into pictures"
                    images_path_list={nature_images}
           />
-          <Service title="Photoshoot"
-                   description="Get your own portfolio"
+          <Service title="Portfolio books "
+                   description="Have a photoshoot session with us and get the best of yourself"
                    images_path_list={city_images}
           />
-          <Service title="Photoshoot"
-                   description="Get your own portfolio"
+          <Service title="Image stock for businesses"
+                   description="Get your own personalised stock of images for your business"
                    images_path_list={food_images}
           />
       </div>
+      {/*
       <div className="corner">
           <Contact/>
       </div>
+      */}
     </div>
   );
 }

@@ -1,4 +1,9 @@
 .cover-image-container {
+    /*
+    display: block;
+    height: 10vw;
+    width: 5vw;
+    */
     display: block;
 }
 
@@ -17,6 +22,7 @@
 }
 
 .cover-image-grid-column {
+    background-clip: padding-box;
 }
 
 .masonry-img {
