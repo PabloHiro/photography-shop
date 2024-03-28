@@ -5,6 +5,10 @@
     width: var(--base-size);
     height: calc(var(--base-size) / var(--golden-ratio));
     overflow: hidden;
+    /*Inner border hack*/
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
 }
 
 .service-content {
@@ -24,6 +28,7 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    font-family: 'Shrikhand';
     font-size: 2em;
     background-color: transparent;
     text-shadow: 0.05em 0.05em var(--main-color);

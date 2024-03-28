@@ -1,0 +1,20 @@
+.header {
+    padding: 0.4em;
+    padding-left: 1.5em;
+    display: flex;
+    justify-content: center;
+}
+
+.header-title {
+    color: var(--main-color);
+    font-size: 3em;
+    font-family: 'Shrikhand';
+}
+
+.contact-box {
+    display: flex;
+    margin: 1em;
+    justify-content: flex-end;
+    align-items: flex-end;
+    
+}

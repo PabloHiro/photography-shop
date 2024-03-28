@@ -1,0 +1,19 @@
+.contact {
+    display: flex;
+
+}
+
+/*  CSS guide for FontAwesome
+    https://docs.fontawesome.com/web/add-icons/pseudo-elements
+*/
+
+.contact-icon {
+    color: var(--main-color);
+    padding: 0.2em;
+    transition: transform 0.5 ease;
+}
+
+.contact-icon:hover {
+    color: var(--text-color);
+    transform: scale(1.2);
+}

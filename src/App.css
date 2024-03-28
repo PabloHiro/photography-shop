@@ -1,3 +1,7 @@
+/* Fonts */
+@import url('https://fonts.googleapis.com/css?family=Shrikhand');
+@import url('https://fonts.googleapis.com/css?family=Monteserrat');
+
 :root {
   --main-color:           #B48B7D; 
   --text-color:           #593D3B; 
@@ -10,20 +14,22 @@
 }
 
 body {
+  color: var(--text-color);
+  background-color: var(--background-color);
+  border-color: var(--main-color);
   margin: 0;
+  /*
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
+    */
+  font-family: 'Montserrat';
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
 * {
   scroll-behavior: smooth;
-  font-family: "Poppins", sans-serif;
-  background-color: var(--background-color);
-  color: var(--text-color);
-  border-color: var(--main-color);
   /* Hide scrollbar for IE, Edge and Firefox */
   -ms-overflow-style: none;  /* IE and Edge */
   scrollbar-width: none;  /* Firefox */
@@ -49,9 +55,6 @@ a:hover {
   justify-content: center;
 }
 
-.corner {
-
-}
 
 @media (min-width: 480px) and (max-width: 720px) {
   :root{

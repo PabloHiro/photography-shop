@@ -1,7 +1,7 @@
 import './App.css';
+import Header from './components/Header/Header';
 import Slide from './components/Slide/Slide';
 import Service from './components/Service/Service';
-import Contact from './components/Contact/Contact';
 
 function importImages(r, path) {
   let images = [];
@@ -21,6 +21,7 @@ function App() {
   return (
     <div>
       <div className="main">
+          <Header title="Jolina Manalang"/>
           <Service title="Event coverage"
                    description="Focus on enjoying your time with your loved ones while we take care of putting these memories into pictures"
                    images_path_list={nature_images}
@@ -29,7 +30,7 @@ function App() {
                    description="Have a photoshoot session with us and get the best of yourself"
                    images_path_list={city_images}
           />
-          <Service title="Image stock for businesses"
+          <Service title="Image stock"
                    description="Get your own personalised stock of images for your business"
                    images_path_list={food_images}
           />
