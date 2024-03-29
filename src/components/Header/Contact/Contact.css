@@ -14,6 +14,6 @@
 }
 
 .contact-icon:hover {
-    color: var(--text-color);
+    color: var(--highlight-color);
     transform: scale(1.2);
 }

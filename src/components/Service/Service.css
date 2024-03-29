@@ -21,6 +21,10 @@
     vertical-align: center;
 }
 
+.service-content:hover .title {
+    color: var(--background-highlight);
+}
+
 .title {
     color: var(--background-color);
     position: absolute;
@@ -32,10 +36,6 @@
     font-size: 2em;
     background-color: transparent;
     text-shadow: 0.05em 0.05em var(--main-color);
-}
-
-.title:hover {
-    color: var(--background-highlight);
 }
 
 .description {
