@@ -3,33 +3,32 @@ import './CoverImage.css';
 import Masonry from 'react-masonry-css';
 
 function CoverImage( { images_path_list, isVisible, onClick } ) {
+    // Return only the N random elements of a list of images path
+    // where N is the closest quadratic integer to the lenght of the array
+    // Example:
+    // 17 -> 16
+    // 15 -> 9
     const getRoundedSquareRootElements = (array) => {
-        // Get the length of the array
         let length = array.length;
-
-        // Calculate the square root and round down to the nearest integer
         let roundedDown = Math.floor(Math.sqrt(length));
-
-        // Shuffle the elements of the array - https://stackoverflow.com/a/46545530/18099647
-        /*
         let shuffled_array = array
             .map(value => ({ value, sort: Math.random() }))
             .sort((a, b) => a.sort - b.sort)
             .map(({ value }) => value)
-        */
-        // Return only the first n elements of the array
-        return array.slice(0, roundedDown);
+
+        return shuffled_array.slice(0, roundedDown*roundedDown);
     };
 
     let sqrt_images_path_list = getRoundedSquareRootElements(images_path_list);
+    console.log(sqrt_images_path_list);
     return (
         <div className={`cover-image-container ${isVisible ? '' : 'hidden'}`} onClick={onClick}>
             <Masonry
-                breakpointCols={{ default: sqrt_images_path_list.length }}
+                breakpointCols={{ default: Math.floor(Math.sqrt(sqrt_images_path_list.length)) }}
                 className="cover-image-grid"
                 columnClassName="cover-image-grid-column"
             >
-            {images_path_list && images_path_list.map((image, index) => (
+            {sqrt_images_path_list && sqrt_images_path_list.map((image, index) => (
                 <img className="masonry-img" key={index} src={image} alt={image} />
             ))}
             </Masonry>
