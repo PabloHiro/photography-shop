@@ -1,5 +1,6 @@
 .contact {
     display: flex;
+    gap: 0.4em;
 
 }
 
@@ -9,7 +10,6 @@
 
 .contact-icon {
     color: var(--main-color);
-    padding: 0.2em;
     transition: transform 0.5 ease;
 }
 

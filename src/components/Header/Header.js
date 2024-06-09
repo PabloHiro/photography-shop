@@ -10,9 +10,7 @@ function Header({ title }) {
             <div className='header-title' onClick={reloadPage}>
                 {title}
             </div>
-            <div className='contact-box'>
-                <Contact/>
-            </div>
+            <Contact/>
         </div>
     );
 }
