@@ -55,7 +55,6 @@ a:hover {
   justify-content: center;
 }
 
-
 @media (min-width: 480px) and (max-width: 720px) {
   :root{
     --screen-width: 480px;
