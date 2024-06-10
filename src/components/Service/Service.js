@@ -16,9 +16,9 @@ function Service({ title, description, images_path_list }) {
         onClick={toggleVisibility}
       />
       {isCoverImageVisible && (
-        <div className="title" onClick={toggleVisibility}>
+        <h2 className="title" onClick={toggleVisibility}>
           {title}
-        </div>
+        </h2>
       )}
       {!isCoverImageVisible && (
         <div className="description" onClick={toggleVisibility}>
