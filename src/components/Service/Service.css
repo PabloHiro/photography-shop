@@ -1,16 +1,3 @@
-.service {
-    margin-top: 0.4em;
-    margin-bottom: 0.4em;
-    margin-left: calc(50% - var(--base-size)/2);
-    width: var(--base-size);
-    height: calc(var(--base-size) / var(--golden-ratio));
-    overflow: hidden;
-    /*Inner border hack*/
-    box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    -webkit-box-sizing: border-box;
-}
-
 .service-content {
     position: relative;
     top: 0;

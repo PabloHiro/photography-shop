@@ -1,26 +1,32 @@
-import './Service.css';
-import CoverImage from './CoverImage/CoverImage'
-import { useState } from 'react';
+import "./Service.css";
+import CoverImage from "./CoverImage/CoverImage";
+import { useState } from "react";
 function Service({ title, description, images_path_list }) {
-    const [isCoverImageVisible, setCoverImageVisible] = useState(true);
+  const [isCoverImageVisible, setCoverImageVisible] = useState(true);
 
-    const toggleVisibility = () => {
-        setCoverImageVisible(!isCoverImageVisible);
-    };
+  const toggleVisibility = () => {
+    setCoverImageVisible(!isCoverImageVisible);
+  };
 
-    return (
-        <div className='service'>
-            <div className='service-content'>
-                <CoverImage 
-                    images_path_list={images_path_list} 
-                    isVisible={isCoverImageVisible} 
-                    onClick={toggleVisibility} 
-                />
-                {isCoverImageVisible && <div className='title'onClick={toggleVisibility}>{title}</div>}
-                {!isCoverImageVisible && <div className='description' onClick={toggleVisibility}>{description}</div>}
-            </div>
+  return (
+    <div className="service-content">
+      <CoverImage
+        images_path_list={images_path_list}
+        isVisible={isCoverImageVisible}
+        onClick={toggleVisibility}
+      />
+      {isCoverImageVisible && (
+        <div className="title" onClick={toggleVisibility}>
+          {title}
         </div>
-    );
+      )}
+      {!isCoverImageVisible && (
+        <div className="description" onClick={toggleVisibility}>
+          {description}
+        </div>
+      )}
+    </div>
+  );
 }
 
 export default Service;
