@@ -1,37 +1,20 @@
-.cover-image-container {
-    /*
-    display: block;
-    height: 10vw;
-    width: 5vw;
-    */
-    display: block;
-}
-
 .cover-image-container.hidden {
-    opacity: 0%;
+  opacity: 0%;
 }
 
-.cover-image-grid {
-    display: flex;
-    width: auto;
+.image-container {
+  overflow: hidden;
 }
 
-.cover-image-grid-column {
-    background-clip: padding-box;
-    overflow: hidden;
+img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  filter: contrast(50%);
+  transition: all 0.3s;
 }
 
-.masonry-img {
-    display: flex;
-    height: auto;
-    width: 100%;
-    filter: contrast(90%);
-    transition: all .3s;
+img:hover {
+  filter: contrast(90%);
+  transform: scale(1.05);
 }
-
-.masonry-img:hover {
-    filter: contrast(70%);
-    transform: scale(1.02);
-}
-
-

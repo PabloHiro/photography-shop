@@ -1,7 +1,8 @@
 import "./Service.css";
 import CoverImage from "./CoverImage/CoverImage";
 import { useState } from "react";
-function Service({ title, description, images_path_list }) {
+
+function Service({ title, description, images_path_list, gridName }) {
   const [isCoverImageVisible, setCoverImageVisible] = useState(true);
 
   const toggleVisibility = () => {
@@ -9,11 +10,10 @@ function Service({ title, description, images_path_list }) {
   };
 
   return (
-    <div className="service-content">
+    <div className={gridName}>
       <CoverImage
         images_path_list={images_path_list}
         isVisible={isCoverImageVisible}
-        onClick={toggleVisibility}
       />
       {isCoverImageVisible && (
         <h2 className="title" onClick={toggleVisibility}>

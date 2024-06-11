@@ -25,14 +25,17 @@ function App() {
           <Service title="Event coverage"
                    description="Focus on enjoying your time with your loved ones while we take care of putting these memories into pictures"
                    images_path_list={nature_images}
+                   gridName="services service-event"
           />
           <Service title="Portfolio books "
                    description="Have a photoshoot session with us and get the best of yourself"
                    images_path_list={city_images}
+                   gridName="services service-portfolio"
           />
           <Service title="Image stock"
                    description="Get your own personalised stock of images for your business"
                    images_path_list={food_images}
+                   gridName="services service-image-stock"
           />
       </div>
       {/*
