@@ -18,7 +18,8 @@ function CoverImage({ images_path_list, isVisible }) {
   };
 
   const imageHandleClick = srcImage => {
-    window.location.href = window.location.origin + srcImage;
+    const url = window.location.origin + srcImage;
+    window.open(url, "_blank", "noopener,noreferrer,popup");
   };
 
   let sqrt_images_path_list = getRoundedSquareRootElements(images_path_list);
@@ -27,11 +28,16 @@ function CoverImage({ images_path_list, isVisible }) {
     <>
       {sqrt_images_path_list &&
         sqrt_images_path_list.map((image, index) => (
-          <div key={index} className="image-container">
+          <div
+            key={index}
+            className={`image-container ${isVisible ? "" : "hidden"}`}
+          >
             <img
               src={image}
               alt={image}
-              onClick={() => imageHandleClick(image)}
+              onClick={() => {
+                return isVisible ? imageHandleClick(image) : null;
+              }}
             />
           </div>
         ))}

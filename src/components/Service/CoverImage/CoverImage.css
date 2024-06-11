@@ -1,9 +1,10 @@
-.cover-image-container.hidden {
+.image-container.hidden {
   opacity: 0%;
 }
 
 .image-container {
   overflow: hidden;
+  transition: all .1s;
 }
 
 img {
