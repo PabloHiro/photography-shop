@@ -1,19 +1,17 @@
 .contact {
-    display: flex;
-    gap: 0.4em;
-
+  display: flex;
+  gap: 0.4em;
 }
 
 /*  CSS guide for FontAwesome
     https://docs.fontawesome.com/web/add-icons/pseudo-elements
 */
-
 .contact-icon {
-    color: var(--main-color);
-    transition: transform 0.5 ease;
+  color: var(--main-color);
+  transition: transform 0.5s ease;
 }
 
 .contact-icon:hover {
-    color: var(--highlight-color);
-    transform: scale(1.2);
+  color: var(--highlight-color);
+  transform: scale(1.1);
 }
