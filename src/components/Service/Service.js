@@ -1,10 +1,24 @@
 import './Service.css';
+import CoverImage from './CoverImage/CoverImage'
+import { useState } from 'react';
+function Service({ title, description, images_path_list }) {
+    const [isCoverImageVisible, setCoverImageVisible] = useState(true);
 
-function Service( { title, description } ) {
+    const toggleVisibility = () => {
+        setCoverImageVisible(!isCoverImageVisible);
+    };
+
     return (
-        <div className='services'>
-            <div className='title'>{ title }</div>
-            <div className='description'>{ description }</div>
+        <div className='service'>
+            <div className='service-content'>
+                <CoverImage 
+                    images_path_list={images_path_list} 
+                    isVisible={isCoverImageVisible} 
+                    onClick={toggleVisibility} 
+                />
+                {isCoverImageVisible && <div className='title'onClick={toggleVisibility}>{title}</div>}
+                {!isCoverImageVisible && <div className='description' onClick={toggleVisibility}>{description}</div>}
+            </div>
         </div>
     );
 }

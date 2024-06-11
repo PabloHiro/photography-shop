@@ -1,10 +1,18 @@
 .header {
     display: flex;
-    max-height: 10em;
+    align-items: center;
+    justify-content: center;
+    border-bottom: 2px solid;
+    border-color: var(--main-color);
+    gap: 1em;
 }
 
-.header img {
-    display: block;
-    width: 100%;
-    object-fit: cover;
+.header-title {
+    color: var(--main-color);
+    font-size: calc(6px + 6vmin);
+    font-family: 'Shrikhand';
+}
+
+.header-title:hover {
+    color: var(--highlight-color);
 }

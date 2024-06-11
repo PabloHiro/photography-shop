@@ -1,17 +1,16 @@
 import './Header.css';
+import Contact from './Contact/Contact'
 
-const header_image = {
-    imageUrl: 'https://cdn.pixabay.com/photo/2023/07/17/13/50/baby-snow-leopard-8132690_960_720.jpg',
-    author: 'ChiemSeherin'
-}
-
-function Header() {
+function Header({ title }) {
+    const reloadPage = () => {
+        window.location.reload();
+    };
     return (
         <div className='header'>
-            <img
-              src={header_image.imageUrl}
-              alt={'Photo by ' + header_image.author}
-            />
+            <div className='header-title' onClick={reloadPage}>
+                {title}
+            </div>
+            <Contact/>
         </div>
     );
 }
