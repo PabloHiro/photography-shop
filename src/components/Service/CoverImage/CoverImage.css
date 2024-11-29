@@ -1,32 +1,21 @@
-.cover-image-container {
-    /*
-    display: block;
-    height: 10vw;
-    width: 5vw;
-    */
-    display: block;
+.image-container.hidden {
+  opacity: 0%;
 }
 
-.cover-image-container.hidden {
-    opacity: 0%;
+.image-container {
+  overflow: hidden;
+  transition: all .1s;
 }
 
-.cover-image-grid {
-    display: flex;
-    width: auto;
-    filter: contrast(65%);
+img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  filter: contrast(50%);
+  transition: all 0.3s;
 }
 
-.cover-image-grid:hover {
-    filter: contrast(85%);
-}
-
-.cover-image-grid-column {
-    background-clip: padding-box;
-}
-
-.masonry-img {
-    display: flex;
-    height: auto;
-    width: 100%;
+img:hover {
+  filter: contrast(90%);
+  transform: scale(1.05);
 }
