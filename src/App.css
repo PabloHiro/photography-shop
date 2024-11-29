@@ -3,11 +3,11 @@
 @import url('https://fonts.googleapis.com/css?family=Montserrat');
 
 :root {
-  --main-color:           #B48B7D; 
-  --text-color:           #593D3B; 
-  --highlight-color:      #627264; 
-  --background-color:     #E3E7D3; 
-  --background-highlight: #E6E49F; 
+  --main-color:           #B48B7D;
+  --text-color:           #593D3B;
+  --highlight-color:      #627264;
+  --background-color:     #E3E7D3;
+  --background-highlight: #E6E49F;
   --golden-ratio:         1.618;
   --screen-width:         100vw; /* 100% of the viewport width */
   --base-size:            calc(var(--screen-width) / var(--golden-ratio));
@@ -37,7 +37,7 @@ body {
 }
 
 *::-webkit-scrollbar {
-  /* Hide scrollbar for Chrome, Safari and Opera */ 
+  /* Hide scrollbar for Chrome, Safari and Opera */
   display: none;
 }
 
@@ -54,7 +54,6 @@ a:hover {
   align-items: center;
   justify-content: center;
 }
-
 
 @media (min-width: 480px) and (max-width: 720px) {
   :root{
