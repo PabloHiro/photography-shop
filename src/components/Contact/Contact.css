@@ -1,8 +1,0 @@
-.contact {
-    display: flex;
-}
-
-.contact-button:hover {
-    fa-inverse: var(--highlight-color);
-}
-

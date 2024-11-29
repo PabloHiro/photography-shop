@@ -1,10 +1,22 @@
 .header {
-    display: flex;
-    max-height: 10em;
+  position: sticky;
+  top: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1em;
+  background-color: var(--background-color);
+  z-index: 10;
 }
 
-.header img {
-    display: block;
-    width: 100%;
-    object-fit: cover;
+.header-title {
+  color: var(--main-color);
+  font-size: 1.5em;
+  font-family: "Shrikhand";
+  transition: all 0.2s;
+  cursor: default;
+}
+
+.header-title:hover {
+  color: var(--highlight-color);
 }
