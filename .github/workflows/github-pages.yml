@@ -13,6 +13,11 @@ jobs:
       - name: Check out the repository to the runner
         id: checkout
         uses: actions/checkout@v4
+      - name: Setup node version
+        id: node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
       - name: Build static files
         id: build
         run: |
