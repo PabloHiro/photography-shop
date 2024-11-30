@@ -1,4 +1,3 @@
-import React, { useRef, useState } from 'react';
 import './Slide.css';
 // core version + navigation, pagination modules:
 import { Swiper, SwiperSlide } from 'swiper/react';

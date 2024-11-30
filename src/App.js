@@ -1,6 +1,5 @@
 import './App.css';
 import Header from './components/Header/Header';
-import Slide from './components/Slide/Slide';
 import Service from './components/Service/Service';
 
 function importImages(r, path) {
