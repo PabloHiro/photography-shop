@@ -4,13 +4,15 @@ import Service from './components/Service/Service';
 
 function importImages(r, path) {
   let images = [];
+  const basePath = process.env.PUBLIC_URL || '';
   try {
-    r.keys().map((item, index) => images.push(item.replace(/^\.\//, path)));
-    return images;
+    r.keys().forEach((item) => {
+      images.push(`${basePath}${item.replace(/^\.\//, path)}`);
+    });
   } catch(error) {
     console.error('Error importing images:', error);
-    return {};
   }
+  return images;
 }
 const nature_images = importImages(require.context('../public/assets/images/nature/', false, /\.(png|jpe?g|svg)$/i), '/assets/images/nature/');
 const city_images   = importImages(require.context('../public/assets/images/city/',   false, /\.(png|jpe?g|svg)$/i), '/assets/images/city/'  );
