@@ -1,6 +1,7 @@
 {
   "name": "photography-shop",
   "version": "0.1.0",
+  "homepage": "https://pablohiro.github.io/photography-shop",
   "private": true,
   "dependencies": {
     "@fortawesome/free-brands-svg-icons": "^6.5.0",
