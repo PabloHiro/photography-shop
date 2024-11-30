@@ -10,12 +10,14 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
+      - name: Check out the repository to the runner
+        id: checkout
+        uses: actions/checkout@v4
       - name: Build static files
         id: build
         run: |
           npm install
           npm run build
-
       - name: Upload static files as artifact
         id: deployment
         uses: actions/upload-pages-artifact@v3
